@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-urlpatterns = [
-    path("codestar/", include("blog.urls"), name="blog-urls"),
+urlpatterns = [    
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
+    path("", include("blog.urls"), name="blog-urls")
 ]
