@@ -8,7 +8,10 @@ from .models import Comment, Post
 # ans then add the class which gives admin panel greater functionality and clarity
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
-
+    """
+    Lists fields for display in admin, fileds for search,
+    field filters, fields to prepopulate and rich-text editor.
+    """
     list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title']
     list_filter = ('status',)
