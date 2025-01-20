@@ -1,8 +1,9 @@
-from django.shortcuts import render
 from django.contrib import messages
-from .models import About
+from django.shortcuts import render
 
 from .forms import CollaborateForm
+from .models import About
+
 
 def about_me(request):
     """

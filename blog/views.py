@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
+from django.shortcuts import get_object_or_404, render, reverse
+from django.views import generic
+
 from .forms import CommentForm
+from .models import Comment, Post
 
 # Create your views here.
 

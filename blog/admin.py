@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
+
+from .models import Comment, Post
+
 
 # register it with a decorator
 # ans then add the class which gives admin panel greater functionality and clarity
